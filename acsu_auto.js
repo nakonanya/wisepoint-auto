@@ -12,11 +12,9 @@
 (function() {
     'use strict';
 
-    // 設定：自動クリックするパスワード（順番にクリックされるアルファベット）
+    // 設定：自動クリックするパスワード
     const PASSWORD = ['', '', '', '']; // ['A', 'B', 'C', 'D']; のようにパスワードを設定
-
-    // --- UI ---
-    // 自動入力ボタンをログインボタンの左隣に追加
+    
     function addAutoButton() {
         if (document.getElementById('autoInputBtn')) return;
         const btn = document.createElement('button');
@@ -61,8 +59,7 @@
         }
         return false;
     }
-
-    // --- 自動入力 ---
+    
     async function autoInput() {
         for (const c of PASSWORD) {
             const ok = clickMatrixChar(c);
@@ -70,15 +67,14 @@
                 alert('エラー');
                 return;
             }
-            await new Promise(r => setTimeout(r, 200));
+            await new Promise(r => setTimeout(r, 2));
         }
         const loginBtn = document.getElementById('btnLogin');
         if (loginBtn) {
-            setTimeout(() => loginBtn.click(), 200);
+            setTimeout(() => loginBtn.click(), 2);
         }
     }
 
-    // --- マトリクス出現監視 ---
     function waitAndAddButton() {
         if (document.getElementById('autoInputBtn')) return;
         const matrix = document.querySelector('[id^="button0"].input_imgdiv_class');
@@ -96,7 +92,6 @@
         observer.observe(document.body, { childList: true, subtree: true });
     }
 
-    // --- 初期化 ---
     if (document.readyState === 'loading') {
         window.addEventListener('DOMContentLoaded', waitAndAddButton);
     } else {

@@ -3,7 +3,7 @@
 // @namespace    https://github.com/UltiMorse/wisepoint-auto
 // @version      2025-08-11
 // @description  ACSUのマトリクス認証自動入力ボタン追加
-// @author       UltiMorse
+// @author       nakonanya
 // @match        https://gakunin.ealps.shinshu-u.ac.jp/idp/Authn/External?conversation=*
 // @grant        none
 // ==/UserScript==

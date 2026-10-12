@@ -9,4 +9,4 @@ iPnoneではUserScriptというSafari拡張アプリで動作確認済み。
 
 AndroidではFirefoxでUserScriptを使って動作確認済み。
 
-[導入方法などこちらから]([https://blog.nakonanya.workers.dev/](https://blog.nakonanya.workers.dev/articles/2025-08-09-acsu-auto))
+[導入方法などこちらから]([https://blog.nakonanya.workers.dev/](https://blog.nakonanya.workers.dev/articles/2025-08-09-acsu-auto)

@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         wisepoint-auto
-// @namespace    https://github.com/UltiMorse/wisepoint-auto
+// @namespace    https://github.com/nakonanya/wisepoint-auto
 // @version      2025-08-11
 // @description  ACSUのマトリクス認証自動入力ボタン追加
 // @author       nakonanya
